@@ -1,0 +1,33 @@
+body {
+    background-color: var(--background-color);
+}
+
+.container {
+    padding: 140px 83px;
+}
+
+.background-circles-container {
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.background-circles-container .circle {
+    width: 977px;
+    height: 977px;
+    border: 144px solid var(--background-circle-border-color);
+    border-radius: 100%;
+    position: absolute;
+}
+
+.background-circles-container .circle.circle-top-left {
+    top: -750px;
+    left: -750px;
+}
+
+.background-circles-container .circle.circle-bottom-right {
+    bottom: -750px;
+    right: -750px;
+}

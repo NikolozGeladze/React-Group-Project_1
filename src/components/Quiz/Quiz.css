@@ -1,0 +1,12 @@
+.quiz-container {
+    width: 100%;
+}
+
+.quiz-container .question {
+    height: 652px;
+}
+
+.quiz-container .question .question-h1 {
+    margin-top: 27px;
+    font-size: 36px;
+}

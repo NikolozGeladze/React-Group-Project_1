@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background-color: red;
+}
+
+.start-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 80px;            
+  margin-top: 180px;
+}
+
+.welclass {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+  color: #626C7F;
+}
+
+.welclass2 {
+  font-size: 66px;
+  font-weight: 700;
+  color: #3B4D66;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;   /*დასამუშავებელი----- გაიგე ზომა არ დაგვავიწყდეს😁*/
+  width: 500px;
+  height: 160px;
+}
+.option {
+  display: flex;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 18px;
+}
+
+.welcomeDiv h1 {
+  margin: 5px 0; 
+}
+.welcomeDiv p {
+  margin: 5px 0; 
+}

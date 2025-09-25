@@ -30,18 +30,71 @@ body {
   width: 500px;
   height: 160px;
 }
-.option {
-  display: flex;
-  background: white;
-  border: none;
-  border-radius: 12px;
-  padding: 16px 20px;
-  font-size: 18px;
-}
+
+
 
 .welcomeDiv h1 {
   margin: 5px 0; 
 }
 .welcomeDiv p {
   margin: 5px 0; 
+}
+.options button {
+  display: flex;
+  background: white;
+  width: 500px;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 18px;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+.options button:hover {
+    transform:  scale(1.02);
+}
+
+
+#Html {
+    background-color: rgba(255, 165, 0, 0.3); 
+    color: orange; 
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Css {
+    background-color: rgba(38, 215, 130, 0.3); 
+    color: #26D782;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Js {
+    background-color: rgba(27, 157, 212, 0.3); 
+    color: #1b9dd4;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Acc {
+    background-color: rgba(167, 41, 245, 0.3);
+    color: #A729F5;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

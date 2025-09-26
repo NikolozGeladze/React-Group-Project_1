@@ -8,8 +8,11 @@ export default function StartMenu() {
 
 
       <div className="welcomeDiv">
+        <div className="secendWelD">
         <h1 className="welclass">Welcome to the</h1>
         <h1 className="welclass2">Frontend Quiz!</h1>
+        </div>
+
         <p>Pick a subject to get started.</p>
       </div>
 

@@ -5,39 +5,63 @@ body {
 
 .start-container {
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  gap: 80px;            
+  flex-direction: row;
+  width: 1160px;
+  height: 456px;
+  justify-content: space-between;
   margin-top: 180px;
+  margin-left: 220px;
+  gap: 64px;
+  flex-flow: Horizontal;
 }
+
+
+
 
 .welclass {
   font-size: 40px;
   font-weight: 300;
   margin: 0;
-  color: #626C7F;
+  color: #313E51;
+  width: 440px;
+  height: 64px;
+  font-size: 65px;
 }
 
 .welclass2 {
-  font-size: 66px;
   font-weight: 700;
-  color: #3B4D66;
+  color: #313E51;
+  width: 440px;
+  height: 64px;
+  font-size: 65px;
+
 }
 .options {
   display: flex;
   flex-direction: column;
-  gap: 20px;   /*დასამუშავებელი----- გაიგე ზომა არ დაგვავიწყდეს😁*/
-  width: 500px;
-  height: 160px;
+  gap: 24px;
+  width: 564px;
+  height: 456px;
+  flex-flow: Vertical;
 }
 
+.welcomeDiv {
+  width: 465px;
+  height: 214px;
+  gap: 48px;
+  flex-flow: Vertical;
+}
 
+.secendWelD {
+  width: 453px;
+  height: 136px;
+}
 
 .welcomeDiv h1 {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 .welcomeDiv p {
-  margin: 5px 0; 
+  color: #626C7F;
 }
 .options button {
   display: flex;
@@ -97,4 +121,83 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+  .start-container {
+    flex-direction: column; 
+    width: 640px;  
+    height: auto;  
+    margin-top: 145px;
+    margin-left: 64px;
+    gap: 64px;
+  }
+
+  .options {
+    width: 100%; 
+    height: auto;
+  }
+
+  .options button {
+    width: 100%;
+  }
+
+  .welcomeDiv {
+    width: 100%;
+    height: auto;
+  }
+
+  .secendWelD {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-container {
+    display: flex;
+    flex-direction: column;  
+    width: 100%;             
+    max-width: 375px;        
+    height: 740px;          
+    padding: 32px 24px 0 24px;
+    gap: 40px;              
+    margin: 0 auto;          
+  }
+
+  .welcomeDiv {
+    width: 100%;
+    height: auto;
+  }
+
+.options {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 327px; 
+  margin: 0 auto 300px;  /* container შუაში */
+}
+.options button {
+  width: 100%; /* 100% მშობელიდან */
+}
+.welclass {
+  font-size: 40px;
+  height: 40px;
+}
+.welclass2 {
+  font-size: 40px;
+}
+.secendWelD {
+  width: 327px;
+  height: 125px;
+}
+p {
+  width: 327px;
+  height: 21px;
+  margin-bottom: 5px;
+  margin-top: 1px;
+}
+
+
 }

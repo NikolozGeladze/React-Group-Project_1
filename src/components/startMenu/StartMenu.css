@@ -3,53 +3,39 @@ body {
   background-color: red;
 }
 
+
 .start-container {
   display: flex;
   flex-direction: row;
-  width: 1160px;
+  width: 90%; 
+  max-width: 1160px; 
   height: 456px;
   justify-content: space-between;
-  margin-top: 180px;
-  margin-left: 220px;
   gap: 64px;
-  flex-flow: Horizontal;
+  margin: 180px auto 0 auto; 
 }
 
-
-
-
 .welclass {
-  font-size: 40px;
+  font-size: 65px;
   font-weight: 300;
   margin: 0;
   color: #313E51;
-  width: 440px;
+  width: 440px; 
   height: 64px;
-  font-size: 65px;
 }
 
 .welclass2 {
+  font-size: 65px; 
   font-weight: 700;
   color: #313E51;
   width: 440px;
   height: 64px;
-  font-size: 65px;
-
-}
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 564px;
-  height: 456px;
-  flex-flow: Vertical;
 }
 
 .welcomeDiv {
   width: 465px;
   height: 214px;
   gap: 48px;
-  flex-flow: Vertical;
 }
 
 .secendWelD {
@@ -63,20 +49,41 @@ body {
 .welcomeDiv p {
   color: #626C7F;
 }
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%; 
+  max-width: 564px; 
+  height: 456px;
+}
+
+
 .options button {
   display: flex;
   background: white;
-  width: 500px;
+  width: 100%; 
   border: none;
   border-radius: 12px;
   padding: 16px 20px;
   font-size: 18px;
   gap: 20px;
-  transition: transform 0.2s;
+  cursor: pointer; 
+
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out; 
 }
+
 .options button:hover {
-    transform:  scale(1.02);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
+
+.options button:active {
+    transform: scale(0.98); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) inset; 
+}
+
 
 
 #Html {
@@ -89,7 +96,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #Css {
     background-color: rgba(38, 215, 130, 0.3); 
     color: #26D782;
@@ -100,7 +106,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #Js {
     background-color: rgba(27, 157, 212, 0.3); 
     color: #1b9dd4;
@@ -111,7 +116,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 #Acc {
     background-color: rgba(167, 41, 245, 0.3);
     color: #A729F5;
@@ -127,77 +131,62 @@ body {
 @media (max-width: 1024px) {
   .start-container {
     flex-direction: column; 
-    width: 640px;  
-    height: auto;  
-    margin-top: 145px;
-    margin-left: 64px;
+    width: 90%; 
+    max-width: 640px; 
+    height: auto; 
+    margin: 145px auto 0 auto; 
     gap: 64px;
   }
 
-  .options {
+  .options, .welcomeDiv, .secendWelD {
     width: 100%; 
     height: auto;
+    max-width: 100%;
   }
 
   .options button {
     width: 100%;
   }
-
-  .welcomeDiv {
-    width: 100%;
-    height: auto;
-  }
-
-  .secendWelD {
-    width: 100%;
-    height: auto;
-  }
 }
+
 
 @media (max-width: 480px) {
   .start-container {
-    display: flex;
     flex-direction: column;  
     width: 100%;             
     max-width: 375px;        
-    height: 740px;          
+    height: auto;
     padding: 32px 24px 0 24px;
     gap: 40px;              
     margin: 0 auto;          
   }
 
-  .welcomeDiv {
+  .welclass, .welclass2 {
+    font-size: 40px; 
+    height: auto; 
     width: 100%;
-    height: auto;
   }
 
-.options {
-  display: flex;
-  gap: 12px;
-  width: 100%;
-  max-width: 327px; 
-  margin: 0 auto 300px;  /* container შუაში */
-}
-.options button {
-  width: 100%; /* 100% მშობელიდან */
-}
-.welclass {
-  font-size: 40px;
-  height: 40px;
-}
-.welclass2 {
-  font-size: 40px;
-}
-.secendWelD {
-  width: 327px;
-  height: 125px;
-}
-p {
-  width: 327px;
-  height: 21px;
-  margin-bottom: 5px;
-  margin-top: 1px;
-}
+  .options {
+    gap: 12px; 
+    width: 100%;
+    margin: 0 auto 64px;  
+  }
 
-
+  .welcomeDiv p {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 24px; 
+    margin-top: 5px;
+  }
+  
+  .options button {
+    padding: 12px 20px; 
+    font-size: 16px; 
+  }
+  
+  #Html, #Css, #Js, #Acc {
+      width: 28px;
+      height: 28px;
+  }
 }

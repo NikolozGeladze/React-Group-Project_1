@@ -22,12 +22,16 @@ body {
     position: absolute;
 }
 
+/* Top-left circle */
 .background-circles-container .circle.circle-top-left {
-    top: -750px;
-    left: -750px;
+  top: -25vmin;
+  left: -25vmin;
+  transform: translate(-30%, -30%);
 }
 
+/* Bottom-right circle */
 .background-circles-container .circle.circle-bottom-right {
-    bottom: -750px;
-    right: -750px;
+  bottom: -25vmin;
+  right: -25vmin;
+  transform: translate(30%, 30%);
 }

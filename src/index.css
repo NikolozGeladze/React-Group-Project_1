@@ -1,6 +1,6 @@
 :root {
     --background-color: #F4F6FA;
-    --text-color: #313E51;
+    --text-main-color: #313E51;
     --text-color-grey: #626C7F;
     --background-circle-border-color: #EDF1F9;
     --purple: #A729F5;
@@ -10,9 +10,16 @@
     --bg-color-Accessibility: #F6E7FF;
     --correct-answer-color: #26D782;
     --incorrect-answer-color: #EE5454;
+    --white: #ffffff;
+    --answer-option-character-bg-color: #F4F6FA;
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }

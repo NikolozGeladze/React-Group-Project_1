@@ -125,7 +125,7 @@
 
 .answers .answer-option.incorrect:hover .answer-option-character {
     background-color: var(--incorrect-answer-color) !important;
-    color: white;
+    color: white !important;
 }
 
 .answers .answer-option.active .answer-option-character {
@@ -134,8 +134,8 @@
 }
 
 .answers .answer-option.active:hover .answer-option-character {
-    background-color: var(--purple) !important;
-    color: white !important;
+    background-color: var(--purple);
+    color: white;
 }
 
 .answers .answer-option:hover .answer-option-character {

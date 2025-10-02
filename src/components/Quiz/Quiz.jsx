@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Quiz.css';
 import { questions } from '../../data';
+import { useParams } from 'react-router-dom';
 
 export default function Quiz() {
+  const { quizSubject } = useParams();
   const [questionsCount, setQuestionsCount] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [questionProgressBar, setQuestionProgressBar] = useState(questionsCount);
@@ -19,19 +21,20 @@ export default function Quiz() {
     chooseQuestion();
   }, []);
 
+
   function chooseQuestion() {
-    const availableIndexes = questions[0].questions
+    console.log(questions.HTML);
+    const availableIndexes = questions[quizSubject].questions
       .map((_, index) => index)
       .filter(index => !usedIndexes.includes(index));
-
     const randomIndex = availableIndexes[Math.floor(Math.random() * availableIndexes.length)];
-    const randomQuestion = questions[0].questions[randomIndex];
-
+    const randomQuestion = questions[quizSubject].questions[randomIndex];
     setUsedIndexes(prev => [...prev, randomIndex]);
     setQuestion(randomQuestion);
     setSelectedAnswer(null);
     answerRefs.current = [];
   }
+
 
   function handleButtonClick() {
     if (selected === null) {
@@ -103,11 +106,10 @@ export default function Quiz() {
           </div>
         </div>
         <div className="answers">
-          {question?.answerChoices.map((answerChoice, index) => (
+          {question?.answerChoices?.map((answerChoice, index) => (
             <div className={`answer-option ${selected === index ? 'active' : ''}`} key={index} ref={element => (answerRefs.current[index] = element)} onClick={() => selectAnswer(index, answerChoice)}>
               <div className="answer-option-character-answer-choice">
                 <div className="answer-option-character">
-                  {/* A = 65; B = 66; C = 67; D = 68 */}
                   <p>{String.fromCharCode(65 + index)}</p>
                 </div>
                 <p>{answerChoice}</p>

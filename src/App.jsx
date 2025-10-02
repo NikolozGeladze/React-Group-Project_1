@@ -12,13 +12,11 @@ function App() {
         <div className="circle-bottom-right circle"></div>
       </div>
       <div className="container">
-        <Quiz />
-        <StartMenu />
+        <Routes>
+          <Route path='/' element={<StartMenu />} />
+          <Route path='/quiz/:quizSubject' element={<Quiz />} />
+        </Routes>
       </div>
-
-      <Routes>
-        {/* <Route path='/' element={}/> */}
-      </Routes>
     </>
   )
 }

@@ -1,47 +1,203 @@
-body {
-  margin: 0;
-  background-color: red;
-}
-
 .start-container {
   display: flex;
-  justify-content: center; 
-  align-items: center;    
-  gap: 80px;            
-  margin-top: 180px;
+  flex-direction: row;
+  width: 100%;
+  height: 456px;
+  justify-content: space-between;
+  gap: 64px;
 }
 
 .welclass {
-  font-size: 40px;
+  font-size: 64px;
   font-weight: 300;
   margin: 0;
-  color: #626C7F;
+  color: var(--text-main-color);
+  height: 64px;
 }
 
 .welclass2 {
-  font-size: 66px;
+  font-size: 64px;
   font-weight: 700;
-  color: #3B4D66;
+  color: var(--text-main-color) ;
+  height: 64px;
 }
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;   /*დასამუშავებელი----- გაიგე ზომა არ დაგვავიწყდეს😁*/
-  width: 500px;
-  height: 160px;
+
+.welcomeDiv {
+  height: 214px;
+  gap: 48px;
 }
-.option {
-  display: flex;
-  background: white;
-  border: none;
-  border-radius: 12px;
-  padding: 16px 20px;
-  font-size: 18px;
+
+.welcomeDiv p {
+  margin-top: 48px;
+
+}
+
+.secendWelD {
+  height: 136px;
 }
 
 .welcomeDiv h1 {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
+
 .welcomeDiv p {
-  margin: 5px 0; 
+  color: var(--text-color-grey);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+  max-width: 564px;
+  height: 456px;
+}
+
+
+.options div {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 20px;
+  gap: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.options .link {
+  text-decoration: none;
+  color: var(--text-main-color);
+  font-weight: 500;
+}
+
+.options div span {
+  font-size: 18px;
+}
+
+.options div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#Html {
+  background-color: var(--bg-color-html);
+  color: var(--font-color-html);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Css {
+  background-color: var(--bg-color-css);
+  color: var(--font-color-css);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Js {
+  background-color: var(--bg-color-js);
+  color: var(--font-color-js);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Acc {
+  background-color: var(--bg-color-Accessibility);
+  color: var(--font-color-Accessibility);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+  .start-container {
+    flex-direction: column;
+    width: 90%;
+    max-width: 640px;
+    height: auto;
+    gap: 64px;
+  }
+
+  .options,
+  .welcomeDiv,
+  .secendWelD {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .options div {
+    width: 100%;
+  }
+}
+
+/* როცა ეკრანი 375px იქნება */
+@media (max-width: 375px) {
+  .start-container {
+    width: 100%;
+    /* ეკრანის სრულ სიგანეზე */
+    margin: 40px auto;
+    /* ცენტრში მოქცევა */
+    padding: 0 16px;
+    /* გვერდებზე ჰაერი */
+    gap: 32px;
+  }
+
+  .welclass {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .welclass2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .welcomeDiv p {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .options div {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .options siv:hover {
+    transform: scale(1.05);
+    background: #f5f5f5;
+  }
 }

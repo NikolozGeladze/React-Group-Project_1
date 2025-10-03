@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<StartMenu />} />
           <Route path='/quiz/:quizSubject' element={<Quiz />} />
+          <Route path='/score' element={<Score />} />
         </Routes>
       </div>
     </>

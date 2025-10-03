@@ -16,10 +16,10 @@ export default function StartMenu() {
       </div>
 
       <div className="options">
-        <Link className='link' to={`/quiz/${'HTML'}`}><div><span><i className="fa-solid fa-code" id='Html'></i></span> HTML</div></Link>
-        <Link className='link' to={`/quiz/${'CSS'}`}><div><span><i className="fa-solid fa-brush" id='Css'></i></span> CSS</div></Link>
-        <Link className='link' to={`/quiz/${'Javascript'}`}><div><span><i className="fa-brands fa-square-js" id='Js'></i></span> Javascript</div></Link>
-        <Link className='link' to={`/quiz/${'Accessibility'}`}><div><span><i className="fa-solid fa-person" id='Acc'></i></span> Accessibility</div></Link>
+        <Link className='link' to={`/quiz/${'HTML'}`}><div><span><i className="fa-solid fa-code" id='Html'></i></span>HTML</div></Link>
+        <Link className='link' to={`/quiz/${'CSS'}`}><div><span><i className="fa-solid fa-brush" id='Css'></i></span>CSS</div></Link>
+        <Link className='link' to={`/quiz/${'Javascript'}`}><div><span><i className="fa-brands fa-square-js" id='Js'></i></span>Javascript</div></Link>
+        <Link className='link' to={`/quiz/${'Accessibility'}`}><div><span><i className="fa-solid fa-person" id='Acc'></i></span>Accessibility</div></Link>
       </div>
     </div>
   )

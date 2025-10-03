@@ -18,7 +18,7 @@
 .welclass2 {
   font-size: 64px;
   font-weight: 700;
-  color: var(--text-main-color) ;
+  color: var(--text-main-color);
   height: 64px;
 }
 
@@ -78,11 +78,6 @@
   font-size: 18px;
 }
 
-.options div:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 #Html {
   background-color: var(--bg-color-html);
   color: var(--font-color-html);
@@ -127,14 +122,49 @@
   align-items: center;
 }
 
+@media (max-width: 1111px) {
+
+  .welclass,
+  .welclass2 {
+    font-size: 60px;
+    height: auto;
+    margin: 0;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .options .link {
+    width: 90%;
+  }
+
+  .welcomeDiv {
+    width: 50%;
+  }
+}
 
 @media (max-width: 1024px) {
   .start-container {
     flex-direction: column;
-    width: 90%;
-    max-width: 640px;
     height: auto;
     gap: 64px;
+  }
+
+  .welcomeDiv {
+    align-items: center;
+    text-align: center;
+  }
+
+  .options {
+    align-items: center;
+    width: 100%;
+  }
+
+  .options .link {
+    width: 100%;
   }
 
   .options,
@@ -150,15 +180,11 @@
   }
 }
 
-/* როცა ეკრანი 375px იქნება */
 @media (max-width: 375px) {
   .start-container {
     width: 100%;
-    /* ეკრანის სრულ სიგანეზე */
     margin: 40px auto;
-    /* ცენტრში მოქცევა */
     padding: 0 16px;
-    /* გვერდებზე ჰაერი */
     gap: 32px;
   }
 
@@ -195,9 +221,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
   }
+}
 
-  .options siv:hover {
-    transform: scale(1.05);
-    background: #f5f5f5;
+@media (hover: hover) {
+  .options div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 }

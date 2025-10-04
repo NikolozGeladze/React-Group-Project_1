@@ -1,0 +1,125 @@
+
+
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.language-toggle:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.lang-option {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  min-width: 35px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.lang-option.active {
+  background: #a729f5;
+  color: white;
+  opacity: 1;
+}
+
+.language-switch {
+  width: 44px;
+  height: 24px;
+  background: #ddd;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  margin: 0 2px;
+}
+
+.language-slider {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.language-slider.english {
+  transform: translateX(3px);
+}
+
+.language-slider.georgian {
+  transform: translateX(23px);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.sun-moon i {
+  font-size: 18px;
+  color: var(--text-main-color);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.switch {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  margin: 0px 10px;
+}
+
+.switch .circle {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.switch.active {
+  background: #a729f5;
+}
+
+.switch.active .circle {
+  transform: translateX(20px);
+}
+
+:root.dark .language-toggle {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+:root.dark .language-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+:root.dark .language-switch {
+  background: #555;
+}

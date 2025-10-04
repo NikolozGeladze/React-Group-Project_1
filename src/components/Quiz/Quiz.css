@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: space-between;
   color: var(--text-main-color);
-  box-shadow: 0px 0px 40px -12px #8FA0C1;
+  box-shadow: 0px 0px 40px -12px var(--answer-option-hover-bg-color);
 }
 
 .answer-option-character-answer-choice {
@@ -164,6 +164,7 @@
   display: flex;
   align-items: center;
   justify-content: center !important;
+  text-decoration: none;
 }
 
 .submit-answer-btn:hover {

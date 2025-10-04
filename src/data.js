@@ -119,7 +119,7 @@ export const questions = {
       }
     ]
   },
-  JavaScript: {
+  Javascript: {
     topic: 'JavaScript',
     questions: [
       {

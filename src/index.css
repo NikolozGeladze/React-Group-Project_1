@@ -4,14 +4,11 @@
     --text-color-grey: #626C7F;
     --background-circle-border-color: #EDF1F9;
     --purple: #A729F5;
-    --bg-color-html: #FFF1E9;
-    --bg-color-css: #E0FDEF;
-    --bg-color-js: #EBF0FF;
-    --bg-color-Accessibility: #F6E7FF;
     --correct-answer-color: #26D782;
     --incorrect-answer-color: #EE5454;
     --white: #ffffff;
     --answer-option-character-bg-color: #F4F6FA;
+    --answer-option-hover-bg-color: #8FA0C1;
     --bg-color-html: #FFF1E9;
     --bg-color-css: #E0FDEF;
     --bg-color-js: #EBF0FF;
@@ -20,6 +17,18 @@
     --font-color-css: #2FD886;
     --font-color-js: #306AFF;
     --font-color-Accessibility: #A729F5;
+}
+
+:root.dark {
+    --background-color: #313E51;
+    --text-main-color: #ffffff;
+    --text-color-grey: #ABC1E1;
+    --answer-option-hover-bg-color: #2D3949;
+    --background-circle-border-color: #2D3949;
+    --purple: #A729F5;
+    --correct-answer-color: #26D782;
+    --incorrect-answer-color: #EE5454;
+    --white: #3B4D66;
 }
 
 body {
@@ -38,4 +47,5 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
